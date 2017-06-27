@@ -1,8 +1,7 @@
 package com.designthepresent.samuvelp.loctoctask;
 
 import retrofit2.Call;
-import retrofit2.http.Field;
-import retrofit2.http.FormUrlEncoded;
+import retrofit2.http.Body;
 import retrofit2.http.POST;
 
 /**
@@ -10,7 +9,7 @@ import retrofit2.http.POST;
  */
 
 public interface ApiServiceTemp {
-        @FormUrlEncoded
+
         @POST("/getKey")
-        Call<PostTemp> savePost(@Field("tempKey") String tempKey);
+        Call<PostTemp> savePost(@Body PostTemp postTemp);
 }
