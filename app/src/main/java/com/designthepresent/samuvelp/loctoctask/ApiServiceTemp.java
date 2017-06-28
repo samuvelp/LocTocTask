@@ -11,5 +11,5 @@ import retrofit2.http.POST;
 public interface ApiServiceTemp {
 
         @POST("/getKey")
-        Call<PostTemp> savePost(@Body PostTemp postTemp);
+        Call<PostTemp> postTempKey(@Body PostTemp postTemp);
 }
